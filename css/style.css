@@ -1,0 +1,154 @@
+/* FUENTES DE BASE */
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,600&display=swap');
+
+/* 
+font-family: 'Domine', serif;
+font-family: 'Nunito Sans', sans-serif;
+*/
+
+
+/* ESTILO DEL HEADER */
+.header {
+    height: 15%;
+    width: 100%;
+    background-image: url(/images/patrones/more-leaves.png); 
+    background-repeat: repeat; 
+    background-size: none;
+    background-position: center;
+}
+
+.logo-header-imagen {
+    height: none;
+    width: none;
+}
+
+.titulo {
+    font-family: 'Domine', serif;
+    font-weight: 600;
+    color: #722915;
+}
+
+.subtitulo {
+    font-family: 'Domine', serif;
+    font-weight: 600;
+    color: #cd5b12;
+    background-color: #f4d9a8;
+}
+
+.font-principal {
+    font-family: 'Nunito San', sans-serif;
+    font-weight: 400;
+    color: #411307;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu-item-link {
+    text-decoration: none;
+    color: black
+}
+
+
+/* ESTILO DEL MAIN */
+
+.section-main {
+    background-color: #7b715f;
+    height: none;
+    width: 100%;
+}
+
+.section-main-carrusel {
+    height: 300px;
+    width: 100%;
+}
+
+.section-main-carrusel-image {
+    height: none;
+    width: none;
+}
+
+.section-areas {
+    background-color: #f2b757;
+}
+
+.section-areas-article {
+    width: 500px;
+    height: 900px;
+}
+
+
+/* ESTILO DEL FOOTER*/
+
+.footer {
+    background-image: url(/images/fondo-piedra.jpg);
+    background-repeat: repeat;
+    height: none;
+    width: none;
+}
+
+.chat-container {
+    width: 300px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.chat-header {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-messages {
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.user-message {
+    background-color: #e5f7ff;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    max-width: 70%;
+}
+
+.bot-message {
+    background-color: #fff;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    max-width: 70%;
+    align-self: flex-end;
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    padding: 8px;
+}
+
+.input-field {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.send-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
