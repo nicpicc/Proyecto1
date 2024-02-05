@@ -7,11 +7,11 @@ font-family: 'Domine', serif;
 font-family: 'Nunito Sans', sans-serif;
 */
 
-/* GRILLA */
+/* GRILLA INDEX*/
 
 #grilla {
     display: grid;
-    grid-template-rows: 250px 15% 1fr 200px;
+    grid-template-rows: 250px 15% 85% 200px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "header header header"
@@ -41,6 +41,43 @@ footer {
     grid-area: footer;
 }
 
+
+/* GRILLA CONTACTO*/
+
+#grilla-contacto {
+    display: grid;
+    grid-template-rows: 250px 25% 1fr 10% 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "informacion informacion"
+    "formulario mapa"
+    "redes redes"
+    "footer footer";
+    
+}
+
+header {
+    grid-area: header;
+}
+
+.informacion {
+    grid-area: informacion;
+}
+
+.formulario {
+    grid-area: formulario;
+}
+
+.mapa-contacto {
+    grid-area: mapa;
+}
+
+.redes {
+    grid-area: redes;
+}
+
+
 /* ESTILO DEL HEADER */
 .header {
     background-image: url(/images/patrones/more-leaves.png); 
@@ -64,7 +101,7 @@ footer {
     font-family: 'Domine', serif;
     font-weight: 600;
     color: #cd5b12;
-    background-color: #f4d9a8;
+    background-color: none;
 }
 
 .font-principal {
