@@ -2,16 +2,47 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,600&display=swap');
 
-/* 
+/*
 font-family: 'Domine', serif;
 font-family: 'Nunito Sans', sans-serif;
 */
 
+/* GRILLA */
+
+#grilla {
+    display: grid;
+    grid-template-rows: 250px 15% 1fr 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "carruse carrusel carrusel"
+    "servicios servicios servicios"
+    "footer footer footer";
+}
+
+.border {
+    border: 3px solid gray;
+}
+
+.header {
+    grid-area: header;
+}
+
+
+.section-main-carrusel {
+    grid-area: carrusel;
+}
+
+.section-main-areas {
+    grid-area: servicios;
+}
+
+footer {
+    grid-area: footer;
+}
 
 /* ESTILO DEL HEADER */
 .header {
-    height: 15%;
-    width: 100%;
     background-image: url(/images/patrones/more-leaves.png); 
     background-repeat: repeat; 
     background-size: none;
@@ -54,30 +85,23 @@ font-family: 'Nunito Sans', sans-serif;
 
 /* ESTILO DEL MAIN */
 
-.section-main {
-    background-color: #7b715f;
-    height: none;
-    width: 100%;
+.section-main-areas {
+    background-color: #3ec389;
 }
 
 .section-main-carrusel {
-    height: 300px;
-    width: 100%;
+
 }
 
 .section-main-carrusel-image {
-    height: none;
-    width: none;
+
 }
 
-.section-areas {
+.section-main-areas-article {
     background-color: #f2b757;
 }
 
-.section-areas-article {
-    width: 500px;
-    height: 900px;
-}
+
 
 
 /* ESTILO DEL FOOTER*/
