@@ -1,3 +1,54 @@
+/* RESETS */
+* {
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* RESET - Tamaño de fuente- 1rem/em = 10px */
+html {
+    font-size: 62.5%;
+}
+
+/* RESET - HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
 /* FUENTES DE BASE */
 
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,600&display=swap');
@@ -11,11 +62,11 @@ font-family: 'Nunito Sans', sans-serif;
 
 #grilla {
     display: grid;
-    grid-template-rows: 250px 15% 85% 200px;
+    grid-template-rows: 250px 20em 75% 200px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "header header header"
-    "carruse carrusel carrusel"
+    "carrusel carrusel carrusel"
     "servicios servicios servicios"
     "footer footer footer";
 }
@@ -26,19 +77,22 @@ font-family: 'Nunito Sans', sans-serif;
 
 .header {
     grid-area: header;
+    display: flex;
 }
 
-
-.section-main-carrusel {
+.carousel {
     grid-area: carrusel;
+    display: flex;
 }
 
 .section-main-areas {
     grid-area: servicios;
+    display: flex;
 }
 
 footer {
     grid-area: footer;
+    display: flex;
 }
 
 
@@ -77,50 +131,82 @@ header {
     grid-area: redes;
 }
 
-
-/* ESTILO DEL HEADER */
-.header {
-    background-image: url(/images/patrones/more-leaves.png); 
-    background-repeat: repeat; 
-    background-size: none;
-    background-position: center;
-}
-
-.logo-header-imagen {
-    height: none;
-    width: none;
-}
+/* ESTILOS DE FUENTES */
 
 .titulo {
     font-family: 'Domine', serif;
     font-weight: 600;
-    color: #722915;
+    color: #1e1817;
 }
 
 .subtitulo {
     font-family: 'Domine', serif;
     font-weight: 600;
-    color: #cd5b12;
+    color: #241002;
     background-color: none;
 }
 
 .font-principal {
     font-family: 'Nunito San', sans-serif;
     font-weight: 400;
-    color: #411307;
+    color: #120b09;
 }
 
-.menu {
+.font-secondary {
+    font-family: 'Nunito San', sans-serif;
+    font-weight: 200;
+}
+
+
+/* ESTILO DEL HEADER */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(/images/patrones/more-leaves.png); 
+    background-repeat: repeat; 
+    background-size: none;
+    background-position: center;
+    
+    
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-logo-imagen {
+    height: 150px;
+    width: 150px;
+}
+
+
+.menu-navigation-list {
     list-style: none;
+    display: flex;
+    gap: 4rem;
+    padding: 1.5rem;
 }
 
-.menu-item-link {
+.menu-navigation-list-item a {
     text-decoration: none;
-    color: black
+    color: rgb(3, 17, 12);
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+    border-top: 3px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.7s ease;
+}
+
+.menu-navigation-list-item:hoover a {
+    border-bottom: rgba(0, 0, 0, 0.8);
+    border-top: rgba(0, 0, 0, 0.8);
 }
 
 
-/* ESTILO DEL MAIN */
+    /* ESTILO DEL MAIN */
 
 .section-main-areas {
     background-color: #57f8b2d7;
