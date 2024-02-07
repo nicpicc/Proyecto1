@@ -62,7 +62,7 @@ font-family: 'Nunito Sans', sans-serif;
 
 #grilla {
     display: grid;
-    grid-template-rows: 250px 20em 75% 200px;
+    grid-template-rows: 25rem 50rem 70rem 20rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "header header header"
@@ -80,14 +80,17 @@ font-family: 'Nunito Sans', sans-serif;
     display: flex;
 }
 
-.carousel {
+.carrusel {
     grid-area: carrusel;
     display: flex;
+    justify-content: ;
+    max-width: 2500px;
 }
 
 .section-main-areas {
     grid-area: servicios;
     display: flex;
+
 }
 
 footer {
@@ -113,10 +116,12 @@ footer {
 
 header {
     grid-area: header;
+    display: flex;
 }
 
 .informacion {
     grid-area: informacion;
+    display: flex;
 }
 
 .formulario {
@@ -208,13 +213,15 @@ header {
 
     /* ESTILO DEL MAIN */
 
-.section-main-areas {
+    .section-main-carrusel {
+
+    }
+
+    .section-main-areas {
     background-color: #57f8b2d7;
 }
 
-.section-main-carrusel {
 
-}
 
 .section-main-carrusel-image {
 
