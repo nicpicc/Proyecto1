@@ -1,54 +1,3 @@
-/* RESETS */
-* {
-    box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-/* RESET - Tamaño de fuente- 1rem/em = 10px */
-html {
-    font-size: 62.5%;
-}
-
-/* RESET - HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-img {
-    width: 100%;
-}
-
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
 /* FUENTES DE BASE */
 
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,600&display=swap');
@@ -58,48 +7,263 @@ font-family: 'Domine', serif;
 font-family: 'Nunito Sans', sans-serif;
 */
 
-/* GRILLA INDEX*/
+/* Paleta de colores */
+.color1 { #010300 };
+.color2 { #314c53 };
+.color3 { #5a7f78 };
+.color4 { #bbdec6 };
+.color5 { #f7f8fc };
 
-#grilla {
-    display: grid;
-    grid-template-rows: 25rem 50rem 70rem 20rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "header header header"
-    "carrusel carrusel carrusel"
-    "servicios servicios servicios"
-    "footer footer footer";
+
+/* RESETS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-.border {
-    border: 3px solid gray;
+/* RESET - Tamaño de fuente- 1rem/em = 10px */
+html {
+    font-size: 62.5%;
 }
 
-.header {
-    grid-area: header;
+img {
+    width: 100%;
+    background-color: none;
+
+}
+
+
+
+/*ESTILO: INDEX*/
+body {
+
+}
+
+/*Estilos de fuentes*/
+.titulo {
+    font-family: 'Domine', serif;
+    font-weight: 600;
+    color: #1e1817;
+}
+
+.subtitulo {
+    font-family: 'Domine', serif;
+    font-weight: 600;
+    font-size: x-large;
+    color: #010300;
+    background-color: none;
+
+}
+
+.font-principal {
+    font-family: 'Nunito San', sans-serif;
+    font-weight: 400;
+    color: #120b09;
+}
+
+.font-secondary {
+    font-family: 'Nunito San', sans-serif;
+    font-weight: 200;
+}
+
+header {
     display: flex;
+    align-items: center;
+    height: 16rem;
+    justify-content: space-between;
+    align-items: center;
+    
+    font-size: 2.5rem;
 }
 
-.carrusel {
-    grid-area: carrusel;
+.logo {
+    width: 20rem;
+    
+}
+
+.bg-hexa {
+    background-image: url(../images/patrones/geometric.jpg); 
+    background-repeat: repeat; 
+    background-size: 15rem;
+    
+}
+
+.navbar {
+    
+    border: none;
+    padding: none;
+    font-size: 2.5rem;
+    align-items: center;
+    text-align: justify;
+    justify-content: right space-between;
+
+}
+
+.nav-link:hoover {
+    color: #010300;
+
+}
+
+.navbar-toggler-icon {
+    color: #010300;
+    width: 4rem;
+    height: 4rem;
+    justify-content: space-around;
+    font-size: 2.5rem;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(247, 250, 250);
+    background-color: rgba(red, green, blue, alpha);
+    font-size: 8rem;
+}
+
+
+.fondo {
+    background-color: #5a7f78;
+}
+
+.areas {
+    height: 45rem;
+}
+
+.btn-personal {
+    background-color: #bbdec6;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+footer i {
+    font-size: 30px;
+    color: #007bff;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    .carousel-inner img {
+        max-height: auto;
+    }
+
+    .overlay-text {
+        font-size: 4rem
+        ;
+    }
+
+    article img {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-inner img {
+        max-height: 500px;
+    }
+}
+
+/*
+.navbar {
+    height: 16rem;
     display: flex;
-    justify-content: ;
-    max-width: 2500px;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(/images/patrones/more-leaves.png); 
+    background-repeat: repeat; 
+    background-size: none;
+    background-position: center;
+    width: 100%;
+    img {
+        height: 10rem;
+        width: 10rem;
+    }
+    font-size: 2.5rem;
+}
+
+main {
+    height: 40rem;
+    width: 100%;
+    overflow: hidden;
+    }
+    /*max-width: 2500px;
+
+#carouselExampleAutoplaying {
+    max-width: auto;
+    max-height: auto;
+    overflow: hidden;
+}
+
+
+
+
+
+.carousel-title {
+    position: absolute;
+    top: 25%; /* Ajusta la posición vertical 
+    left: 75%; /* Ajusta la posición horizontal
+    transform: translate(-50%, -50%); /* Centra el título
+    color: #a4ead1;
+    font-size: 4.5vw;
+    z-index: 100; /* título por encima
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)
+    
+}
+
+.carousel-text {
+    position: absolute;
+    top: 25%; /* Ajusta la posición vertical 
+    left: 75%; /* Ajusta la posición horizontal 
+    transform: translate(-50%, -50%); /* Centra el título 
+    color: #a4ead1;
+    font-size: 3.5vw;
+    z-index: 100; /* título por encima 
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)
 }
 
 .section-main-areas {
-    grid-area: servicios;
+    height: 55rem;
+    width: auto;
     display: flex;
+
 
 }
 
 footer {
     grid-area: footer;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    img {
+    width: 10rem;
+    }
+    font-size: 1.5rem;
 }
 
 
-/* GRILLA CONTACTO*/
+/* GRILLA CONTACTO
 
 #grilla-contacto {
     display: grid;
@@ -122,10 +286,13 @@ header {
 .informacion {
     grid-area: informacion;
     display: flex;
+    align-items: center;
+    align-content: space-around;
 }
 
 .formulario {
     grid-area: formulario;
+    display: flex;
 }
 
 .mapa-contacto {
@@ -136,94 +303,26 @@ header {
     grid-area: redes;
 }
 
-/* ESTILOS DE FUENTES */
+/* ESTILOS DE FUENTES 
 
-.titulo {
-    font-family: 'Domine', serif;
-    font-weight: 600;
-    color: #1e1817;
-}
 
-.subtitulo {
-    font-family: 'Domine', serif;
-    font-weight: 600;
-    color: #241002;
-    background-color: none;
-}
-
-.font-principal {
-    font-family: 'Nunito San', sans-serif;
-    font-weight: 400;
-    color: #120b09;
-}
-
-.font-secondary {
-    font-family: 'Nunito San', sans-serif;
-    font-weight: 200;
 }
 
 
 /* ESTILO DEL HEADER */
-.header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-image: url(/images/patrones/more-leaves.png); 
-    background-repeat: repeat; 
-    background-size: none;
-    background-position: center;
-    
-    
-}
-
-.header-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header-logo-imagen {
-    height: 150px;
-    width: 150px;
-}
 
 
-.menu-navigation-list {
-    list-style: none;
-    display: flex;
-    gap: 4rem;
-    padding: 1.5rem;
-}
-
-.menu-navigation-list-item a {
-    text-decoration: none;
-    color: rgb(3, 17, 12);
-    font-size: 1.6rem;
-    font-weight: bold;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
-    border-top: 3px solid rgba(0, 0, 0, 0.1);
-    transition: all 0.7s ease;
-}
-
-.menu-navigation-list-item:hoover a {
-    border-bottom: rgba(0, 0, 0, 0.8);
-    border-top: rgba(0, 0, 0, 0.8);
-}
-
-
-    /* ESTILO DEL MAIN */
-
-    .section-main-carrusel {
-
-    }
+/* ESTILO DEL MAIN 
 
     .section-main-areas {
-    background-color: #57f8b2d7;
+    background-color: #8df3c7d7;
+    padding-top: 1rem;
 }
 
 
 
 .section-main-carrusel-image {
+    
 
 }
 
@@ -234,7 +333,7 @@ header {
 
 
 
-/* ESTILO DEL FOOTER*/
+/* ESTILO DEL FOOTER
 
 .footer {
     background-image: url(/images/fondo-piedra.jpg);
@@ -243,7 +342,7 @@ header {
     width: none;
 }
 
-.chat-container {
+/*.chat-container {
     width: 300px;
     position: relative;
     background-color: #fff;
@@ -305,4 +404,4 @@ header {
     padding: 8px;
     border-radius: 5px;
     cursor: pointer;
-}
+}*/

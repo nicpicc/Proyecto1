@@ -3,36 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EJOL Contacto</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link rel="icon" href="./images/favicon.ico">
+    <title>Tu Abogado Ahora - Inicio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body id="grilla-contacto">
-    <header class="header border">
-        <div class="header-logo">
-            <H1 class="header-logo-titulo">Estudio Jurídico OnLine</H1>
-            <a href="../index.html">
-                <img class="header-logo-imagen" src="../images/logo1.jpg" alt="">
-            </a>
-        </div>
-        <div class="menu"> <!-- Menú encabezado-->
-            <nav class="menu-navigation"> 
-                <ul class="menu-navigation-list">
-                    <li class="menu-navigation-list-item"><a class="menu-navigation-list-item-link font-principal" href="../index.html">Inicio</a></li>
-                    <li class="menu-navigation-list-item"><a class="menu-navigation-list-item-link font-principal" href="./pages/nosotros.html">Nosotros</a></li>
-                    <li class="menu-navigation-list-item"><a class="menu-navigation-list-item-link font-principal" href="./pages/contacto.html">Contacto</a></li>
-                    <li class="menu-navigation-list-item"><a class="menu-navigation-list-item-link font-principal"
-                            href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                    <li class="menu-navigation-list-item"><a class="menu-navigation-list-item-link font-principal" href="./pages/soluciones.html">Soluciones</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<body>
+    <!-- INICIO DEL HEADER -->
+    <section class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-hexa">
+            <div class="container-fluid">
+                <a class="navbar-brand col-sm-6 col-md-2 col-lg-2" href="../index.html">
+                    <img src="../images/logoTAA.webp" alt="Logo TAA" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link subtitulo" aria-current="page" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link subtitulo" href="../pages/areas-servicio.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link subtitulo" href="../pages/preguntas-frecuentes.html">Dudas comunes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link subtitulo" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
 
+    <!-- COMINEZO DEL MAIN-->
     <main>
         <section class="informacion">
             <div>
@@ -117,25 +129,37 @@
         </p>
 
 
-    </footer>
-    <!-- <section class="chat"> Modelo base generado por AI 
-        <div class="chat-container">
-            <div class="chat-header">Chat con el Bot</div>
-            <div class="chat-messages">
-                <div class="user-message">Hola, ¿cómo estás?</div>
-                <div class="bot-message">¡Hola! Soy un bot. ¿En qué puedo ayudarte?</div>
-                Agregar más mensajes según sea necesario 
+        <footer class="footer border">
+            <div>
+                <a href="https://www.google.com/maps/@-31.6628198,-60.703583,15z?entry=ttu">
+                    <img class="logo-footer" src="./images/icono-location.png" alt="icono-mapa">
+                </a>
             </div>
-            <div class="chat-input">
-                <input type="text" class="input-field" placeholder="Escribe tu mensaje...">
-                <button class="send-button">Enviar</button>
-            </div>
-        </div>
-    </section> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
 
+            <div>
+                <ul>
+                    <li>
+                        <p>Cel.: 0303456</p>
+                    </li>
+                    <li>
+                        <p>E-mail: tuabogado@live.com</p>
+                    </li>
+                    <li>
+                        <p>Calle Principal nº 1234, Santa Fe (CP 3000)</p>
+                    </li>
+                </ul>
+            </div>
+
+            <p>
+                Copyright (©) Todos los derechos reservados.
+            </p>
+
+        </footer>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
