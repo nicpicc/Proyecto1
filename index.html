@@ -5,174 +5,166 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico.ico">
     <title>Tu Abogado Ahora - Inicio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    
 </head>
 
 <body>
     <!-- INICIO DEL HEADER -->
-    <section class="container-fluid">
-        <nav class="navbar navbar-expand-lg bg-hexa">
-            <div class="container-fluid">
-                <a class="navbar-brand col-sm-6 col-md-2 col-lg-2" href="./index.html">
-                    <img src="./images/logoTAA.webp" alt="Logo TAA" class="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link subtitulo" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link subtitulo" href="./pages/areas-servicio.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link subtitulo" href="./pages/dudas-comunes.html">Dudas comunes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link subtitulo" href="./pages/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
+    <header class="fixed-header">
+        <section class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-hexa">
+                <div class="container-fluid">
+                    <a class="navbar-brand col-sm-6 col-md-2 col-lg-2" href="index.html">
+                        <img src="images/logoTAA.webp" alt="Logo TAA" class="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link subtitulo" aria-current="page"
+                                    href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link subtitulo" href="./pages/areas-servicio.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link subtitulo" href="./pages/dudas-comunes.html">Dudas comunes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link subtitulo" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </section>
+            </nav>
+        </section>
+    </header>
 
     <!-- INICIO DEL MAIN -->
-    <main class="fondo">
-        <!-- Carrusel - sin botones - solo deco-->
-        <section class="container mt-4">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./images/carrusel-acuerdo-1.jpg" class="d-block w-100 " alt="handshake">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/carruseldos.jpg" class="d-block w-100" alt="suit">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/carruseltres.jpg" class="d-block w-100" alt="pen-on-sheet">
-                    </div>
-                    <div>
-                        <h1 class="overlay-text text-center">TU ABOGADO AHORA</h1>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Seccion Presentacion de Areas-->
-        <section class="areas container mt-4">
-            <article class="row gap-4 justify-content-center">
-                <div class="card col-sm-12 col-md-6 col-lg-3">
-                    <img class="section-main-areas-article-images" src="./images/articulouno-chico.jpg"
-                        alt="firma de contrato">
-                    <div class="card-body">
-                        <h3 class="card-title">SUCESIONES</h3>
-                        <p class="card-text">Ante la pérdida de un familiar se suscitan una innumerable cantidad de
-                            situaciones que requieren atención a la mayor brevedad posible por parte de aquellos
-                            relacionados a él. ¿Testamento? La casa, el terreno, el auto, la lancha, las armas, las
-                            cuentas bancarias, la pensión, son algunos de los temas que pueden requerir atención.
-                            Tenemos respuesta para todas tus consultas.</p>
-                        <a href="#" class="btn btn-personal">Consulta Sucesiones</a>
+    <div class="content">
+        <main class="fondo pt-4 pb-4">
+            <!-- Carrusel - sin botones - solo deco-->
+            <section class="container">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/carrusel-acuerdo-1.jpg" class="d-block w-100 " alt="handshake">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/carruseldos.jpg" class="d-block w-100" alt="suit">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/carruseltres.jpg" class="d-block w-100" alt="pen-on-sheet">
+                        </div>
                     </div>
                 </div>
-                <div class="card col-sm-12 col-md-5 col-lg-2">
-                    <img class="section-images" src="./images/articulodos-chico.jpg" alt="">
-                    <div class="card-body">
-                        <h3 class="card-title">TRABAJO</h3>
-                        <p class="card-text">En el ámbito laboral se presentan a diario situaciones que parecen normales
-                            pero nos hacen dudar respecto de si debieran estar sucediendo o no. El trato de los
-                            superiores, la liquidación de mis haberes, las licencias, las condiciones de trabajo, el
-                            pago de las horas extras, los despidos, las enfermedades y los accidentes, entre otras
-                            muchas tantas. Consultando vas a tener mejor preparación para desenvolverte en las
-                            relaciones de trabajo.</p>
-                        <a href="#" class="btn btn-personal">Consulta Laboral</a>
+                <div>
+                    <h1 class="overlay-text text-center">TU ABOGADO AHORA</h1>
+                </div>
+            </section>
+            <!-- Seccion Presentacion de Areas-->
+            <section class="areas container mt-4">
+                <article class="row gap-4 justify-content-center">
+                    <div class="card col-sm-12 col-md-6 col-lg-3">
+                        <img class="section-main-areas-article-images mt-2" src="./images/articulouno-chico.jpg"
+                            alt="firma de contrato">
+                        <div class="card-body">
+                            <h2 class="card-title">SUCESIONES</h2>
+                            <p class="card-text">Ante la pérdida de un familiar se suscita una innumerable cantidad de situaciones que requieren atención a la mayor brevedad posible por parte de aquellos relacionados a él. ¿Testamento? La casa, el terreno, el auto, la lancha, las armas, las cuentas bancarias, la pensión, son algunos de los temas que pueden requerir atención. Tenemos respuesta para todas tus consultas.</p>
+                            <a href="#" class="btn btn-personal">Consulta Sucesiones</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card col-sm-12 col-md-5 col-lg-2">
-                    <img class="section-images" src="./images/desalojo.jpg" alt="">
-                    <div class="card-body">
-                        <h3 class="card-title">DESALOJOS</h3>
-                        <p class="card-text">No son pocas las chances que nos enfrentemos a este tipo de situaciones, ya
-                            sea que estemos de un lado o del otro del conficto. Los contratos de alquiler tienen sus
-                            riesgos, los inmuebles descuidados o abandonados, también. Muchas veces podemos pensar que
-                            no queda nada por hacer cuando en realidad existen muchas herramientas para poder defender
-                            nuestra posición. Una consulta puede acercarte a recuperar un inmueble o a defenderte de una
-                            injusticia.</p>
-                        <a href="#" class="btn btn-personal">Consulta Desalojo</a>
+                    <div class="card col-sm-12 col-md-5 col-lg-2">
+                        <img class="section-images mt-2 img-fluid" src="./images/articulodos-chico.jpg" alt="">
+                        <div class="card-body">
+                            <h2 class="card-title">TRABAJO</h2>
+                            <p class="card-text">En el ámbito laboral se presentan a diario situaciones que parecen
+                                normales
+                                pero nos hacen dudar respecto de si debieran estar sucediendo o no. El trato de los
+                                superiores, la liquidación de mis haberes, las licencias, las condiciones de trabajo, el
+                                pago de las horas extras, los despidos, las enfermedades y los accidentes, entre otras
+                                muchas tantas. Consultando vas a tener mejor preparación para desenvolverte en las
+                                relaciones de trabajo.</p>
+                            <a href="#" class="btn btn-personal">Consulta Laboral</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card col-sm-12 col-md-6 col-lg-3">
-                    <img class="section-images" src="./images/pagare-circulantis.jpg" alt="">
-                    <div class="card-body">
-                        <h3 class="card-title">DEUDAS</h3>
-                        <p class="card-text">Pagarés, cheques, facturas y cualquier otro título de deuda impago. Nos
-                            quita el sueño, nos entorpece la vida. Existen muchas formas de lograr el cobro del dinero
-                            adedudo. Algunas muy rápidas y efectivas, otras requieren de más paciencia. Estamos para
-                            asesosarlo correctamente. No demore su consulta.</p>
-                        <a href="#" class="btn btn-personal">Consulta Cobros</a>
+                    <div class="card col-sm-12 col-md-5 col-lg-2">
+                        <img class="section-images mt-2 img-fluid" src="./images/desalojo.jpg" alt="">
+                        <div class="card-body">
+                            <h2 class="card-title">DESALOJOS</h2>
+                            <p class="card-text">No son pocas las chances que nos enfrentemos a este tipo de
+                                situaciones, ya
+                                sea que estemos de un lado o del otro del conficto. Los contratos de alquiler tienen sus
+                                riesgos, los inmuebles descuidados o abandonados, también. Muchas veces podemos pensar
+                                que
+                                no queda nada por hacer cuando en realidad existen muchas herramientas para poder
+                                defender
+                                nuestra posición. Una consulta puede acercarte a recuperar un inmueble o a defenderte de
+                                una
+                                injusticia.</p>
+                            <a href="#" class="btn btn-personal">Consulta Desalojo</a>
+                        </div>
                     </div>
-                </div>
-            </article>
-        </section>
-    </main>
-
-
-
-    <!-- CHAT CONTAINER -->
-    <!--<section class="chat"> -- Modelo base generado por AI
-            <div class="chat-container">
-                <div class="chat-header">Chat con el Bot</div>
-                <div class="chat-messages">
-                    <div class="user-message">Hola, ¿cómo estás?</div>
-                    <div class="bot-message">¡Hola! Soy un bot. ¿En qué puedo ayudarte?</div>
-                    -- Agregar más mensajes según sea necesario 
-                </div>
-                <div class="chat-input">
-                    <input type="text" class="input-field" placeholder="Escribe tu mensaje...">
-                    <button class="send-button">Enviar</button>
-                </div>
-            </div>
-        </section> -->
-
+                    <div class="card col-sm-12 col-md-6 col-lg-3">
+                        <img class="section-images mt-2" src="./images/pagare-circulantis.jpg" alt="">
+                        <div class="card-body">
+                            <h2 class="card-title">DEUDAS</h2>
+                            <p class="card-text">Pagarés, cheques, facturas y cualquier otro título de deuda impago. Nos
+                                quita el sueño, nos entorpece la vida. Existen muchas formas de lograr el cobro del
+                                dinero
+                                adeudado. Algunas muy rápidas y efectivas, otras requieren de más paciencia. Estamos
+                                para
+                                asesorarlo correctamente. No demore su consulta.</p>
+                            <a href="#" class="btn btn-personal">Consulta Cobros</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
 
     <!-- INICIO DEL FOOTER -->
-    <footer class="text-center container-fluid">
-        <div class="row">
-            <div class="col-sm-2 col-md-2 col-lg-2">
+    <div class="container-fluid foot">
+        <footer class=" row">
+            <a href="https://www.google.com/maps/@-31.6628198,-60.703583,15z?entry=ttu"
+                class="col-sm-12 col-md-2 col-lg-2 ">
+                <img class="icon-map" src="./images/iconos/map_313939.png" alt="icono de mapa con pin d posicionamiento">
+            </a>
 
-                <a href="https://www.google.com/maps/@-31.6628198,-60.703583,15z?entry=ttu">
-                    <img class="logo-footer" src="./images/icono-location.png"
-                        alt="icono de mapa con pin d posicionamiento">
-                </a>
-
-            </div>
-
-            <ul>
+            <ul class="col-sm-12 col-md-11 col-lg-10 aling-items-right">
                 <li>
-                    <p>Cel.: 0303456</p>
+                    <img class="icon-foot" src="images/iconos/old-typical-phone_13936.png" alt="teléfono viejo">
+                    <p class="foot-text">Tel.: 0303456</p>
                 </li>
                 <li>
-                    <p>E-mail: tuabogado@live.com</p>
+                    <img class="icon-foot" src="images/iconos/open_2908410.png" alt="cartel de abierto">
+                    <p class="foot-text">Horario de atención: lunes a viernes de 09 a 18</p>
                 </li>
                 <li>
-                    <p>Calle Principal nº 1234, Santa Fe (CP 3000)</p>
+                    <img class="icon-foot" src="images/iconos/email_2165061.png" alt="sobre-de-coreeo">
+                    <p class="foot-text">E-mail: contacto@tuabogadoahora.com</p>
+                </li>
+                <li>
+                    <img class="icon-foot" src="images/iconos/building_1412046.png" alt="edificio de oficinas">
+                    <p class="foot-text">Calle Principal nº 1234, Santa Fe (CP 3000)</p>
                 </li>
             </ul>
-
-
-            <p>
-                &copy; 2024 Derechos de autor
-            </p>
-        </div>
-
-    </footer>
-
+            
+            <div class="row">
+            <p class="col-sm col-md col-lg justify-content-center copyright"> Creado por nicpicc
+                    &copy; 2024 Todos los derechos reservados.
+                </p>
+            </div>
+        </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
